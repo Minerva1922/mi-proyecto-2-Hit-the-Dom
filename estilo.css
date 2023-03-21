@@ -8,7 +8,7 @@
 
 .lacaja {
      width: 100%;
-     max-width: 1024px;
+     max-width: 600px;
      margin: 0 auto;
     }
 
@@ -16,6 +16,7 @@
 body{
     background-color: #131839;
     display: flex;
+    font-family:'Inter', sans-serif;
 }
 
 .header{
@@ -61,7 +62,7 @@ align-items: center;
     width: 52px;
     left: 286px;
     top: 30px;
-    border-radius: 8px;
+    border-radius: 16px;
     border-color: #6C56C2;
     margin-left: auto;
    }
@@ -76,14 +77,42 @@ align-items: center;
     align-items: center;
     padding-top: 30px;
 }
+
+
 .teclado{
      border-radius: 10px;
      align-items: center;
+     position: relative;
 }
+
+.btn_teclas{
+    position:absolute;
+    width: 65%;
+    height: 71%;
+    top: 12%;
+    right: 3%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 4%;
+    
+}
+
+
+.teclas{
+    background: linear-gradient(180deg, #222222 50.35%, #353535 100%);
+    border: 3px solid #D94A4A;
+    box-shadow: -3px 6px 4px rgba(0, 0, 0, 0.61), inset 0px 4px 6px rgba(255, 255, 255, 0.52), inset -3px 5px 4px rgba(0, 0, 0, 0.77);
+    border-radius: 5px;
+    top: 0%;
+
+}
+
 
 .midi{
     padding-top: 120px;
     padding-bottom: 120px;
+
     
     
 }
@@ -113,23 +142,33 @@ p{
     text-align: center;
     font-size: 20px;
     font-weight: 400;
+    margin-top: 120px;
 }
 
 
 .boton_grande{
-    background-color: rgba(108, 86, 194, 1);
-    font-family: Inter;
-    font-size: 22px;
-    font-weight: 600;
-    line-height: 27px;
-    letter-spacing: 0em;
-    text-align: center;
-
-}
-
-.downlod{
-    padding-top: 120px;
+    
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    font-family: Inter;
+    background: #6C56C2;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    border: none;
+    padding: 2.5em 4em;
+    text-align: center;
+    color:white;
+    border-radius: 16px;
+
 }
+
+.button_play{
+    background: #131839;
+    color:white;
+}
+
+.Downlod{
+   align-items: center;
+   flex-direction: column;
+}
+ 
