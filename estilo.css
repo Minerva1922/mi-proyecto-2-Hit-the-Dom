@@ -139,6 +139,12 @@ p{
     margin-top: 120px;
 }
 
+.Download{
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+ }
+
 
 .boton_grande{
     
@@ -156,13 +162,34 @@ p{
 
 }
 
-.button_play{
-    background: #131839;
-    color:white;
+.play{
+    display: flex;
+
 }
 
-.Downlod{
-   align-items: center;
-   flex-direction: column;
+h5{
+    color:white
+    
 }
- 
+
+
+
+
+.footer_main {
+   flex-direction: column;
+   display: flex;
+   gap: 5px;
+}
+
+ .btn_formulario{
+    font-family: Inter;
+    background: #6C56C2;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    border: none;
+    padding: 2.5em 4em;
+    text-align: center;
+    color: white;
+    border-radius: 16px;
+ }
